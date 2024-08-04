@@ -2,16 +2,27 @@
 <html>
 <head>
   <style>
-    body { font-family: Arial, sans-serif; padding: 10px; }
+    body {width: 15rem; padding: 10px; font-family: "Poppins", sans-serif;}
     button { margin: 5px; }
   </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h3>Color Blindness Assistant</h3>
-  <button id="protanopia">Protanopia</button>
-  <button id="deuteranopia">Deuteranopia</button>
-  <button id="tritanopia">Tritanopia</button>
-  <button id="reset">Reset</button>
+  <h3 class="text-xl font-bold mb-4">Color Blindness Assistant</h3>
+  <div class="mb-2">
+    <button id="protanopia" class="bg-blue-500 text-white px-4 py-2 rounded">Protanopia / Red-blind</button>
+  </div>
+  <div class="mb-2">
+    <button id="deuteranopia" class="bg-green-500 text-white px-4 py-2 rounded">Deuteranopia / Green-blind</button>
+  </div>
+  <div class="mb-2">
+    <button id="tritanopia" class="bg-red-500 text-white px-4 py-2 rounded">Tritanopia / Blue-blind</button>
+  </div>
+  <div>
+    <button id="reset" class="bg-gray-500 text-white px-4 py-2 rounded">Reset</button>
+  </div>
   <script src="popup.js"></script>
 </body>
 </html>
